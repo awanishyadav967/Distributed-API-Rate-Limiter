@@ -1,0 +1,13 @@
+rate-limiter:
+  capacity: 10
+  refill-tokens-per-second: 1
+
+spring:
+  application:
+    name: rate-limiter
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      connect-timeout: 2s
+      timeout: 2s
